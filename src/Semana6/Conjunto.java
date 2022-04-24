@@ -12,6 +12,7 @@ public class Conjunto {
         }
     }
 
+    
     //remove a element in Vector conjunto
     public void remove(int n){
         if(this.contains(n)){
