@@ -1,9 +1,16 @@
 package src.Semana7;
 
+import java.util.function.Supplier;
+
 public class Alojamentos extends Agencia{
+
+    String codigo, nome, local;
+    double preco_noite, avaliacao;
+    boolean disponibilidade;
 
     //constructor
     Alojamentos(String codigo, String nome, String local, Double preco_noite, boolean disponibilidade, double avaliacao){
+        super(nome, endereco); //??
         this.set();
     }
 

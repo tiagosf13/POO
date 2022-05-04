@@ -2,8 +2,11 @@ package src.Semana7;
 
 public class QuartoHotel extends Alojamentos{
     
+    String tipo_de_quarto;
+
     //constructor
     QuartoHotel(String codigo, String nome, String local, Double preco_noite, boolean disponibilidade, double avaliacao, String tipo_de_quarto){
+        super(codigo, nome, local, preco_noite, disponibilidade, avaliacao);
         this.set();
     }
 

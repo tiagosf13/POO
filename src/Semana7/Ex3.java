@@ -5,15 +5,19 @@ import java.util.Scanner;
 public class Ex3 {
     public static void main(String[] args){
 
-        String input, codigo, nome, local, tipo_de_quarto, tipo_motorizacao;
+        String codigo, nome, local, tipo_de_quarto, tipo_motorizacao, nome_agencia, endereco;
         Double preco_noite, avaliacao;
         boolean disponibilidade;
-        int numero_quartos;
-        char classe_de_carro
+        int numero_quartos, input;
+        char classe_de_carro;
 
         Scanner sc = new Scanner(System.in);
 
-        Agencia agencia = new Agencia();
+        System.out.println("Insira o nome da agência: ");
+        nome_agencia = sc.next();
+        System.out.println("Insira o endereço da agência");
+        endereco = sc.next();
+        Agencia agencia = new Agencia(nome_agencia, endereco);
 
         System.out.println("Menu");
         System.out.println("1 - Criar um Apartamento");
@@ -54,12 +58,12 @@ public class Ex3 {
                 System.out.println("Insira a Avaliação do hotel[1.0 a 5.0]: ");
                 avaliacao = sc.nextDouble();
                 System.out.println("Insira o Tipo de Quartos do hotel: ");
-                tipo_de_quarto = sc.nextInt();
+                tipo_de_quarto = sc.next();
                 Alojamentos alojamento2 = new Alojamentos(codigo, nome, local, preco_noite, disponibilidade, avaliacao);
                 QuartoHotel quarto_hotel = new QuartoHotel(codigo, nome, local, preco_noite, disponibilidade, avaliacao, tipo_de_quarto);
             case(3):
                 System.out.println("Insira a Classe do carro[A, B, C, D, E, F]: ");
-                classe_de_carro = sc.next();
+                classe_de_carro = sc.next().toCharArray()[0];
                 System.out.println("Insira o Tipo de Motorização do carro: ");
                 tipo_motorizacao = sc.next();
                 Carro carro = new Carro(classe_de_carro, tipo_motorizacao);

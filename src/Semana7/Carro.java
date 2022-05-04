@@ -2,16 +2,19 @@ package src.Semana7;
 
 public class Carro extends Agencia{
     
+    char classe_de_carro;
+    String tipo_motorizacao;
     boolean disponibilidade = true;
 
     //constructor
     Carro(char classe_de_carro, String tipo_motorizacao){
+        super(nome, endereco); //???
         this.set();
     }
 
     //set properties
     public void set(){
-        if (classe_de_carro=="A" || classe_de_carro=="B" || classe_de_carro=="C" || classe_de_carro == "D" ||classe_de_carro =="E"|| classe_de_carro=="F"){
+        if (classe_de_carro=='A' || classe_de_carro=='B' || classe_de_carro=='C' || classe_de_carro == 'D' ||classe_de_carro =='E' || classe_de_carro=='F'){
           this.classe_de_carro = classe_de_carro;  
         }
         else{

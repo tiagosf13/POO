@@ -2,6 +2,8 @@ package src.Semana7;
 
 public class Agencia {
 
+    String nome, endereco;
+
     //constructor
     Agencia(String nome, String endereco){
         this.set();
@@ -9,7 +11,7 @@ public class Agencia {
     
     //set properties
     public void set(){
-        this.nome = nome,
+        this.nome = nome;
         this.endereco = endereco;
     }
 
