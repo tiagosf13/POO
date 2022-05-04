@@ -85,22 +85,25 @@ public class DataND extends Data{
 
     //decrement date
     public void decrementDate(int day, int month, int year){
-        int counter=0;
-        while (this.day!=1 || this.month!=1 || this.year!=2000){
-            if (this.day==1 && this.month==1){
-                this.day=31;
-                this.month=12;
-                this.year--;
-                counter++;
-            }
-            else if (this.day==1){
-                this.day=monthDays(month-1, year);
-                this.month--;
-                counter++;
+        int counter=0, day1=1, month1=1, year1=2000;
+        while (this.day!=day1 || this.month!=month1 || this.year!=year1){
+            if(monthDays(month1, year1)==day1){
+                if(month1==12){
+                    day1=1;
+                    month1=1;
+                    year1++;
+                    counter++; 
+                }
+                else{
+                    day1=1;
+                    month1++;
+                    counter++;
+                }
             }
             else{
-                this.day--;
-                counter++;            }
+                day1++;
+                counter++;
+            }
         }
         System.out.println("Distância em dias: "+counter);
     }
