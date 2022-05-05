@@ -49,4 +49,10 @@ public class Apartamento extends Alojamentos{
     public int getNumeroQuartos(){
         return this.numero_quartos;
     }
+
+    //toString
+    public String toString(){
+        String frase = "Codigo: "+ this.codigo+"\n"+"Nome: "+ this.nome+"\n"+"Local: "+ this.local+"\n"+"Preço por Noite: "+ this.preco_noite+"\n"+"Disponibilidade: "+ this.disponibilidade+"\n"+"Avaliação: "+ this.avaliacao+"\n"+"Numero de Quartos: "+ this.numero_quartos+"\n";
+        return frase;
+    }
 }

@@ -49,4 +49,10 @@ public class QuartoHotel extends Alojamentos{
     public String getTipoDeQuarto(){
         return this.tipo_de_quarto;
     }
+
+    //toString
+    public String toString(){
+        String frase = "Codigo: "+ this.codigo+"\n"+"Nome: "+ this.nome+"\n"+"Local: "+ this.local+"\n"+"Preço por Noite: "+ this.preco_noite+"\n"+"Disponibilidade: "+ this.disponibilidade+"\n"+"Avaliação: "+ this.avaliacao+"\n"+"Tipo de Quartos: "+ this.tipo_de_quarto+"\n";
+        return frase;
+    }
 }

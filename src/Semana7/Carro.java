@@ -40,4 +40,10 @@ public class Carro{
     public boolean getDisponibilidade(){
         return this.disponibilidade;
     }
+
+    //toString
+    public String toString(){
+        String frase = "Classe do Carro: "+ this.classe_de_carro+"\n"+"Motorização: "+ this.tipo_motorizacao+"\n"+"Disponibilidade: "+ this.disponibilidade+"\n";
+        return frase;
+    }
 }
