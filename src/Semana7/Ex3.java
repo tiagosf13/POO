@@ -5,6 +5,10 @@ import java.util.Scanner;
 public class Ex3 {
     public static void main(String[] args){
 
+
+        //este exercicio esta mal no sentido em que as variaveis locais podem nao ter sido iniciadas,
+        //caso em que o utilizador nao chega a criar os objetos antes de os visualizar
+
         String codigo, nome, local, tipo_de_quarto, tipo_motorizacao, nome_agencia, endereco;
         Double preco_noite, avaliacao;
         boolean disponibilidade, apartamento_criado=false, hotel_criado=false, carro_criado=false;
@@ -13,9 +17,6 @@ public class Ex3 {
 
         Scanner sc = new Scanner(System.in);
         
-        Apartamento apartamento = new Apartamento("1", "s", "s", 1, true, 2, 2);
-        QuartoHotel quarto_hotel = new QuartoHotel("1", "s", "s", 1.0, true, 2, "2");
-
         System.out.println("Insira o nome da agência: ");
         nome_agencia = sc.nextLine();
         System.out.println("Insira o endereço da agência");
@@ -51,7 +52,6 @@ public class Ex3 {
                     avaliacao = sc.nextDouble();
                     System.out.println("Insira o Número de Quartos do apartamento: ");
                     numero_quartos = sc.nextInt();
-                    Alojamentos alojamento1 = new Alojamentos(codigo, nome, local, preco_noite, disponibilidade, avaliacao);
                     Apartamento apartamento = new Apartamento(codigo, nome, local, preco_noite, disponibilidade, avaliacao, numero_quartos);
                     apartamento_criado=true;
                     break;
@@ -70,7 +70,6 @@ public class Ex3 {
                     avaliacao = sc.nextDouble();
                     System.out.println("Insira o Tipo de Quartos do hotel[single, double, twin, triple]: ");
                     tipo_de_quarto = sc.next();
-                    Alojamentos alojamento2 = new Alojamentos(codigo, nome, local, preco_noite, disponibilidade, avaliacao);
                     QuartoHotel quarto_hotel = new QuartoHotel(codigo, nome, local, preco_noite, disponibilidade, avaliacao, tipo_de_quarto);
                     hotel_criado=true;
                     break;
@@ -108,5 +107,6 @@ public class Ex3 {
                     }
             }
         }
+        sc.close();
     }
 }
