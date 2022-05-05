@@ -7,28 +7,12 @@ public class QuartoHotel extends Alojamentos{
     //constructor
     QuartoHotel(String codigo, String nome, String local, Double preco_noite, boolean disponibilidade, double avaliacao, String tipo_de_quarto){
         super(codigo, nome, local, preco_noite, disponibilidade, avaliacao);
-        this.set();
+        this.set(tipo_de_quarto);
     }
 
     //set properties
-    public void set(){
-        this.codigo = codigo;
-        this.nome = nome;
-        this.local = local;
-        this.preco_noite = preco_noite;
-        this.disponibilidade = disponibilidade;
-        if (avaliacao>=1 || avaliacao<=5){
-            this.avaliacao = avaliacao;    
-        }
-        else{
-            System.out.println("A avaliação deve ser de 1.0 a 5.0!"); //por neste troco um loop para verificar se o input é de facto 1.0<=INPUT<=5.0
-        }
-        if (tipo_de_quarto=="single" || tipo_de_quarto=="double" || tipo_de_quarto=="twin" || tipo_de_quarto=="triple"){
-            this.tipo_de_quarto = tipo_de_quarto;
-        }
-        else{
-            System.out.println("O tipo de quarto deve ser SINGLE ou DOUBLE ou TWIN ou TRIPLE!");//por neste troco um loop para verificar se o input é de facto single, double, twin ou triple
-        }
+    public void set(String tipo_de_quarto){
+        this.tipo_de_quarto = tipo_de_quarto;
     }
 
     //get codigo

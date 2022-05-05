@@ -7,22 +7,11 @@ public class Apartamento extends Alojamentos{
     //constructor
     Apartamento(String codigo, String nome, String local, double preco_noite, boolean disponibilidade, double avaliacao, int numero_quartos){
         super(codigo, nome, local, preco_noite, disponibilidade, avaliacao);
-        this.set();
+        this.set(numero_quartos);
     }
 
     //set properties
-    public void set(){
-        this.codigo = codigo;
-        this.nome = nome;
-        this.local = local;
-        this.preco_noite = preco_noite;
-        this.disponibilidade = disponibilidade;
-        if (avaliacao>=1 || avaliacao<=5){
-            this.avaliacao = avaliacao;    
-        }
-        else{
-            System.out.println("A avaliação deve ser de 1.0 a 5.0!"); //por neste troco um loop para verificar se o input é de facto 1.0<=INPUT<=5.0
-        }
+    public void set(int numero_quartos){
         this.numero_quartos = numero_quartos;
     }
 

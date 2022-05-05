@@ -1,6 +1,6 @@
 package src.Semana7;
 
-public class Carro extends Agencia{
+public class Carro{
     
     char classe_de_carro;
     String tipo_motorizacao;
@@ -8,24 +8,13 @@ public class Carro extends Agencia{
 
     //constructor
     Carro(char classe_de_carro, String tipo_motorizacao){
-        super(nome, endereco); //???
-        this.set();
+        this.set(classe_de_carro, tipo_motorizacao, disponibilidade);
     }
 
     //set properties
-    public void set(){
-        if (classe_de_carro=='A' || classe_de_carro=='B' || classe_de_carro=='C' || classe_de_carro == 'D' ||classe_de_carro =='E' || classe_de_carro=='F'){
-          this.classe_de_carro = classe_de_carro;  
-        }
-        else{
-            System.out.println("A classe do carro deve ser A, B, C, D, E ou F!"); //por neste troco um loop para verificar se o input é de facto A, B, C, D, E ou F
-        }
-        if (tipo_motorizacao=="gasolina" || tipo_motorizacao=="diesel" || tipo_motorizacao=="hibrido" || tipo_motorizacao=="eletrico"){
-            this.tipo_motorizacao = tipo_motorizacao;
-        }
-        else{
-            System.out.println("O tipo de motorização deve ser gasolina, diesel, hibrido ou eletrico!");
-        }
+    public void set(char classe_de_carro, String tipo_motorizacao, boolean disponibilidade){
+        this.classe_de_carro = classe_de_carro;  
+        this.tipo_motorizacao = tipo_motorizacao;
         this.disponibilidade = disponibilidade;
     }
 

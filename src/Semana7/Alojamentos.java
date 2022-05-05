@@ -1,8 +1,6 @@
 package src.Semana7;
 
-import java.util.function.Supplier;
-
-public class Alojamentos extends Agencia{
+public class Alojamentos{
 
     String codigo, nome, local;
     double preco_noite, avaliacao;
@@ -10,12 +8,11 @@ public class Alojamentos extends Agencia{
 
     //constructor
     Alojamentos(String codigo, String nome, String local, Double preco_noite, boolean disponibilidade, double avaliacao){
-        super(nome, endereco); //??
-        this.set();
+        this.set(codigo, nome, local, preco_noite, disponibilidade, avaliacao);
     }
 
     //set properties
-    public void set(){
+    public void set(String codigo, String nome, String local, Double preco_noite, boolean disponibilidade, double avaliacao){
         this.codigo = codigo;
         this.nome = nome;
         this.local = local;

@@ -2,15 +2,15 @@ package src.Semana7;
 
 public class Agencia {
 
-    String nome, endereco;
+    public String nome, endereco;
 
     //constructor
     Agencia(String nome, String endereco){
-        this.set();
+        this.set(nome, endereco);
     }
     
     //set properties
-    public void set(){
+    public void set(String nome, String endereco){
         this.nome = nome;
         this.endereco = endereco;
     }
@@ -23,6 +23,5 @@ public class Agencia {
     //get address of Agencia 
     public String getEndereco(){
         return this.endereco;
-    }
-    
+    }   
 }
