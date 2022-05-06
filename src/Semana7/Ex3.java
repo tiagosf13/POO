@@ -22,15 +22,21 @@ public class Ex3 {
         System.out.println("Insira o endereço da agência");
         endereco = sc.nextLine();
         Agencia agencia = new Agencia(nome_agencia, endereco);
-        while(input!=7){
+        while(input!=0){
             System.out.println("Menu");
             System.out.println("1 - Criar um Apartamento");
             System.out.println("2 - Criar um Quarto de Hotel");
             System.out.println("3 - Criar um Carro");
-            System.out.println("4 - Ver Apartamentos");
-            System.out.println("5 - Ver Quartos de Hotel");
-            System.out.println("6 - Ver Carros");
-            System.out.println("7 - Exit");
+            System.out.println("4 - Check-In Apartamento");
+            System.out.println("5 - Check-In Hotel");
+            System.out.println("6 - Check-Out Apartamento");
+            System.out.println("7 - Check-Out Apartamento");
+            System.out.println("8 - Levantar Carro");
+            System.out.println("9 - Entregar Carro");
+            System.out.println("10 - Ver Apartamentos");
+            System.out.println("11 - Ver Quartos de Hotel");
+            System.out.println("12 - Ver Carros");
+            System.out.println("0 - Exit");
             System.out.println();
             System.out.println();
 
@@ -53,6 +59,7 @@ public class Ex3 {
                     System.out.println("Insira o Número de Quartos do apartamento: ");
                     numero_quartos = sc.nextInt();
                     Apartamento apartamento = new Apartamento(codigo, nome, local, preco_noite, disponibilidade, avaliacao, numero_quartos);
+                    Alojamentos alojamento1 = new Alojamentos(codigo, nome, local, preco_noite, disponibilidade, avaliacao);
                     apartamento_criado=true;
                     break;
                 case(2):
@@ -71,6 +78,7 @@ public class Ex3 {
                     System.out.println("Insira o Tipo de Quartos do hotel[single, double, twin, triple]: ");
                     tipo_de_quarto = sc.next();
                     QuartoHotel quarto_hotel = new QuartoHotel(codigo, nome, local, preco_noite, disponibilidade, avaliacao, tipo_de_quarto);
+                    Alojamentos alojamento2 = new Alojamentos(codigo, nome, local, preco_noite, disponibilidade, avaliacao);
                     hotel_criado=true;
                     break;
                 case(3):
@@ -82,6 +90,24 @@ public class Ex3 {
                     carro_criado=true;
                     break;
                 case(4):
+                    alojamento1.disponibilidade = false;
+                    break;
+                case(5):
+                    alojamento2.disponibilidade = false;
+                    break;
+                case(6):
+                    alojamento1.disponibilidade = true;
+                    break;
+                case(7):
+                    alojamento2.disponibilidade = true;
+                    break;
+                case(8):
+                    carro.disponibilidade = false;;
+                    break;
+                case(9):
+                    carro.disponibilidade = true;
+                    break;
+                case(10):
                     if (apartamento_criado==true){
                         apartamento.toString();
                     }
@@ -89,7 +115,7 @@ public class Ex3 {
                         System.out.println("Não existe nenhum apartamento");
                         System.exit(0);
                     }
-                case(5):
+                case(11):
                     if (hotel_criado==true){
                         quarto_hotel.toString();
                     }
@@ -97,7 +123,7 @@ public class Ex3 {
                         System.out.println("Não existe nenhum hotel");
                         System.exit(0);
                     }
-                case(6):
+                case(12):
                     if (carro_criado==true){
                         carro.toString();
                     }
