@@ -65,4 +65,6 @@ public class Alojamentos{
     public double getAvaliacao(){
         return this.avaliacao;
     }
+
+    
 }
