@@ -25,7 +25,6 @@ public class Empresa {
         return this.email;
     }
 
-<<<<<<< HEAD
     String viaturas = "";
     public void addVeiculo(VeiculoMotorizado viatura){
         for(int i=0; i<veiculos.length; i++){
@@ -34,14 +33,6 @@ public class Empresa {
                 viaturas += "\n"+"\n"+viatura;
                 break;
             }
-=======
-    public void addVeiculo(VeiculoMotorizado viatura){
-        for(int i=0; i<veiculos.length; i++){
-            System.out.println(veiculos[i]);
-            if(veiculos[i] == null){
-                veiculos[i] = viatura;
-            }//nao esta a verificar se de facto o espaço no array é null ou nao
->>>>>>> 639a926c0432a3a49f01bef672b7a16919d0df28
         }
     }
 
@@ -50,10 +41,6 @@ public class Empresa {
     }
 
     public String toString(){
-<<<<<<< HEAD
         return ("Nome: "+this.nome+"\n"+"Código Postal: "+this.codigo_postal+"\n"+"E-mail: "+this.email+"\n"+"Viaturas: "+viaturas);
-=======
-        return ("Nome: "+this.nome+"\n"+"Código Postal: "+this.codigo_postal+"\n"+"E-mail: "+this.email+"\n"+"Viaturas"+this.veiculos);
->>>>>>> 639a926c0432a3a49f01bef672b7a16919d0df28
     }
 }

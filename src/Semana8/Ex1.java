@@ -9,7 +9,6 @@ public class Ex1 {
         VeiculoMotorizado veiculo4 = new PesadoMercadorias("KL-73-96", "MAN", "CS", 500, 15, 4000, 1250);
         VeiculoMotorizado veiculo5 = new PesadoPassageiros("70-54-LP", "Mercedes-Benz", "Enterprise", 400, 10, 3750, 80);        
         empresa.addVeiculo(veiculo1);
-<<<<<<< HEAD
         veiculo1.trajeto(25);
         veiculo1.trajeto(50);
         veiculo1.trajeto(75);
@@ -81,17 +80,5 @@ public class Ex1 {
                 System.out.println("\n"+"Pesado de Passageiros:"+"\n"+veiculo5.toString());
                 break;
         }
-=======
-        empresa.addVeiculo(veiculo2);
-        empresa.addVeiculo(veiculo3);
-        empresa.addVeiculo(veiculo4);
-        empresa.addVeiculo(veiculo5);
-        empresa.toString();
-        veiculo1.toString();
-        veiculo2.toString();
-        veiculo3.toString();
-        veiculo4.toString();
-        veiculo5.toString();
->>>>>>> 639a926c0432a3a49f01bef672b7a16919d0df28
     }
 }
