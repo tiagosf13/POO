@@ -90,26 +90,26 @@ public class Ex3 {
                     carro_criado=true;
                     break;
                 case(4):
-                    alojamento1.disponibilidade = false;
+                    //alojamento1.disponibilidade = false;
                     break;
                 case(5):
-                    alojamento2.disponibilidade = false;
+                    //alojamento2.disponibilidade = false;
                     break;
                 case(6):
-                    alojamento1.disponibilidade = true;
+                   // alojamento1.disponibilidade = true;
                     break;
                 case(7):
-                    alojamento2.disponibilidade = true;
+                    //alojamento2.disponibilidade = true;
                     break;
                 case(8):
-                    carro.disponibilidade = false;;
+                    //carro.disponibilidade = false;;
                     break;
                 case(9):
-                    carro.disponibilidade = true;
+                    //carro.disponibilidade = true;
                     break;
                 case(10):
                     if (apartamento_criado==true){
-                        apartamento.toString();
+                        //apartamento.toString();
                     }
                     else{
                         System.out.println("Não existe nenhum apartamento");
@@ -117,7 +117,7 @@ public class Ex3 {
                     }
                 case(11):
                     if (hotel_criado==true){
-                        quarto_hotel.toString();
+                        //quarto_hotel.toString();
                     }
                     else{
                         System.out.println("Não existe nenhum hotel");
@@ -125,7 +125,7 @@ public class Ex3 {
                     }
                 case(12):
                     if (carro_criado==true){
-                        carro.toString();
+                        //carro.toString();
                     }
                     else{
                         System.out.println("Não existe nenhum carro");

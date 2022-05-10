@@ -1,0 +1,1 @@
+A entrega foi feita com atraso pois encontrei um lapso no código, em que faltavam algumas operações no menu
