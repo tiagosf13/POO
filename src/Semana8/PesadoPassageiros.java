@@ -2,9 +2,9 @@ package src.Semana8;
 
 public class PesadoPassageiros extends VeiculoMotorizado{
     
-    private int numero_quadro;
-    private float peso;
-    private int maximo_passageiros;
+    public int numero_quadro;
+    public float peso;
+    public int maximo_passageiros;
 
     PesadoPassageiros(String matricula, String marca, String modelo, int potencia, int numero_quadro, float peso, int maximo_passageiros){
         super(matricula, marca, modelo, potencia);

@@ -8,36 +8,43 @@ public class Ex1 {
         VeiculoMotorizado veiculo3 = new Taxi("50-70-HJ", "Fiat", "500", 125, 5, 300, 1656);
         VeiculoMotorizado veiculo4 = new PesadoMercadorias("KL-73-96", "MAN", "CS", 500, 15, 4000, 1250);
         VeiculoMotorizado veiculo5 = new PesadoPassageiros("70-54-LP", "Mercedes-Benz", "Enterprise", 400, 10, 3750, 80);        
-        
+        VeiculoEletrico veiculo6 = new AutomovelLigeiroEletrico("64-FZ-60", "Tesla", "S-Plaid", 420, 8, 300, 50);
+        VeiculoEletrico veiculo7 = new PesadoPassageirosEletrico("98-36-PO", "Scania", "75C", 700, 56, 5000, 120, 25);
+
         veiculo1.trajeto(25);
         veiculo1.trajeto(50);
         veiculo1.trajeto(75);
         veiculo1.trajeto(150);
-        empresa.addVeiculo(veiculo1);
+        empresa.addVeiculoMotorizado(veiculo1);
         
         veiculo2.trajeto(20);
         veiculo2.trajeto(511);
         veiculo2.trajeto(7511412);
         veiculo2.trajeto(15023423);
-        empresa.addVeiculo(veiculo2);
+        empresa.addVeiculoMotorizado(veiculo2);
         
         veiculo3.trajeto(76865);
         veiculo3.trajeto(4564);
         veiculo3.trajeto(3453);
         veiculo3.trajeto(234234);
-        empresa.addVeiculo(veiculo3);
+        empresa.addVeiculoMotorizado(veiculo3);
         
         veiculo4.trajeto(12312);
         veiculo4.trajeto(2342);
         veiculo4.trajeto(3453);
         veiculo4.trajeto(34534);
-        empresa.addVeiculo(veiculo4);
+        empresa.addVeiculoMotorizado(veiculo4);
         
         veiculo5.trajeto(678967);
         veiculo5.trajeto(7897);
         veiculo5.trajeto(6786);
         veiculo5.trajeto(5675);
-        empresa.addVeiculo(veiculo5);
+        empresa.addVeiculoMotorizado(veiculo5);
+
+        veiculo6.carregar(40);
+        veiculo7.carregar(10);
+        empresa.addVeiculoEletrico(veiculo6);
+        empresa.addVeiculoEletrico(veiculo7);
 
         System.out.println("Empresa:"+"\n"+empresa.toString());
         System.out.println("_______________________________________________");    
@@ -50,6 +57,10 @@ public class Ex1 {
         System.out.println("Pesado de Mercadorias:"+"\n"+veiculo4.toString());
         System.out.println("_______________________________________________");    
         System.out.println("Pesado de Passageiros:"+"\n"+veiculo5.toString());
+        System.out.println("_______________________________________________");
+        System.out.println("Automóvel Ligeiro Elétrico:"+"\n"+veiculo6.toString());
+        System.out.println("_______________________________________________");
+        System.out.println("Pesado de Passageiros Elétrico:"+"\n"+veiculo7.toString());
         System.out.println("_______________________________________________");
         
         //este pedaço de código deve ser melhorado

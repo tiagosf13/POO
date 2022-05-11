@@ -2,8 +2,8 @@ package src.Semana8;
 
 public class AutomovelLigeiro extends VeiculoMotorizado {
     
-    private int numero_quadro;
-    private int capacidade_bagageira;
+    public int numero_quadro;
+    public int capacidade_bagageira;
 
     AutomovelLigeiro(String matricula, String marca, String modelo, int potencia, int numero_quadro, int capacidade_bagageira){
         super(matricula, marca, modelo, potencia);

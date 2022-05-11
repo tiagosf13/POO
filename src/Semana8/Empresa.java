@@ -5,7 +5,8 @@ public class Empresa {
     private String nome;
     private String codigo_postal;
     private String email;
-    private VeiculoMotorizado[] veiculos = new VeiculoMotorizado[10];
+    private VeiculoMotorizado[] veiculos_motorizados = new VeiculoMotorizado[10];
+    private VeiculoEletrico[] veiculos_eletricos = new VeiculoEletrico[3];
 
     Empresa(String nome, String codigo_postal, String email){
         this.nome = nome;
@@ -25,22 +26,33 @@ public class Empresa {
         return this.email;
     }
 
-    String viaturas = "";
-    public void addVeiculo(VeiculoMotorizado viatura){
-        for(int i=0; i<veiculos.length; i++){
-            if(veiculos[i] == null){
-                veiculos[i] = viatura;
-                viaturas += "\n"+"\n"+viatura;
+    String viaturas_motorizadas = "";
+    public void addVeiculoMotorizado(VeiculoMotorizado viatura){
+        for(int i=0; i<veiculos_motorizados.length; i++){
+            if(veiculos_motorizados[i] == null){
+                veiculos_motorizados[i] = viatura;
+                viaturas_motorizadas += "\n"+"\n"+viatura;
                 break;
             }
         }
     }
 
-    public void removeVeiculo(int indice){
-        veiculos[indice] = null;
+    String viaturas_eletricas = "";
+    public void addVeiculoEletrico(VeiculoEletrico viatura_eletrica){
+        for(int i=0; i<veiculos_eletricos.length; i++){
+            if(veiculos_eletricos[i] == null){
+                veiculos_eletricos[i] = viatura_eletrica;
+                viaturas_eletricas += "\n"+"\n"+viatura_eletrica;
+                break;
+            }
+        }
+    }
+
+    public void removeVeiculoMotorizado(int indice){
+        veiculos_motorizados[indice] = null;
     }
 
     public String toString(){
-        return ("Nome: "+this.nome+"\n"+"Código Postal: "+this.codigo_postal+"\n"+"E-mail: "+this.email+"\n"+"Viaturas: "+viaturas);
+        return ("Nome: "+this.nome+"\n"+"Código Postal: "+this.codigo_postal+"\n"+"E-mail: "+this.email+"\n"+"Viaturas Motorizadas: "+viaturas_motorizadas+"\n"+"\n"+"\n"+"Viaturas Elétricas: "+viaturas_eletricas);
     }
 }
