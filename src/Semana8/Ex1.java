@@ -42,7 +42,7 @@ public class Ex1 {
         empresa.addVeiculoMotorizado(veiculo5);
 
         veiculo6.carregar(40);
-        veiculo7.carregar(10);
+        veiculo7.carregar(76);
         empresa.addVeiculoEletrico(veiculo6);
         empresa.addVeiculoEletrico(veiculo7);
 

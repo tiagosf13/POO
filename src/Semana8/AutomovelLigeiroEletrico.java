@@ -16,7 +16,11 @@ public class AutomovelLigeiroEletrico extends AutomovelLigeiro implements Veicul
     public void carregar(int percentagem){
         if(this.percentagem_atual!=100){
             this.percentagem_atual += percentagem;
+            if(this.percentagem_atual>100){
+                this.percentagem_atual = 100;
+            }
         }
+
     }
 
     public String toString(){

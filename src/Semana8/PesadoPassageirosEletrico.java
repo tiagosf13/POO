@@ -16,6 +16,9 @@ public class PesadoPassageirosEletrico extends PesadoPassageiros implements Veic
     public void carregar(int percentagem){
         if(this.percentagem_atual!=100){
             this.percentagem_atual += percentagem;
+            if(this.percentagem_atual>100){
+                this.percentagem_atual = 100;
+            }
         }
     }
 
