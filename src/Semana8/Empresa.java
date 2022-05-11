@@ -52,6 +52,10 @@ public class Empresa {
         veiculos_motorizados[indice] = null;
     }
 
+    public void removeVeiculoEletrico(int indice){
+        veiculos_eletricos[indice] = null;
+    }
+
     public String toString(){
         return ("Nome: "+this.nome+"\n"+"Código Postal: "+this.codigo_postal+"\n"+"E-mail: "+this.email+"\n"+"Viaturas Motorizadas: "+viaturas_motorizadas+"\n"+"\n"+"\n"+"Viaturas Elétricas: "+viaturas_eletricas);
     }
