@@ -35,9 +35,9 @@ public class Ex1 {
         veiculo4.trajeto(34534);
         empresa.addVeiculoMotorizado(veiculo4);
         
-        veiculo5.trajeto(678967);
+        veiculo5.trajeto(678555967);
         veiculo5.trajeto(7897);
-        veiculo5.trajeto(6786);
+        veiculo5.trajeto(678618416);
         veiculo5.trajeto(5675);
         empresa.addVeiculoMotorizado(veiculo5);
 
@@ -47,50 +47,8 @@ public class Ex1 {
         empresa.addVeiculoEletrico(veiculo7);
 
         System.out.println("Empresa:"+"\n"+empresa.toString());
-        System.out.println("_______________________________________________");    
-        System.out.println("Motociclo:"+"\n"+veiculo1.toString());
-        System.out.println("_______________________________________________"); 
-        System.out.println("Automóvel Ligeiro:"+"\n"+veiculo2.toString());
-        System.out.println("_______________________________________________");    
-        System.out.println("Táxi:"+"\n"+veiculo3.toString());
-        System.out.println("_______________________________________________");    
-        System.out.println("Pesado de Mercadorias:"+"\n"+veiculo4.toString());
-        System.out.println("_______________________________________________");    
-        System.out.println("Pesado de Passageiros:"+"\n"+veiculo5.toString());
         System.out.println("_______________________________________________");
-        System.out.println("Automóvel Ligeiro Elétrico:"+"\n"+veiculo6.toString());
-        System.out.println("_______________________________________________");
-        System.out.println("Pesado de Passageiros Elétrico:"+"\n"+veiculo7.toString());
-        System.out.println("_______________________________________________");
-        
-        //este pedaço de código deve ser melhorado
-
-        int maior_distancia=0;
-        int veiculo_maior_distancia = 0;
-        int[] distancias_totais = {veiculo1.distancia_total, veiculo2.distancia_total, veiculo3.distancia_total, veiculo4.distancia_total, veiculo5.distancia_total};
-        for(int i=0;i<5;i++){
-            if (distancias_totais[i]>maior_distancia){
-                maior_distancia = distancias_totais[i];
-                veiculo_maior_distancia = i+1;
-            }
-        }
         System.out.println("A maior distância percorrida é do veiculo: ");
-        switch(veiculo_maior_distancia){
-            case(1):
-                System.out.println("\n"+"Motociclo:"+"\n"+veiculo1.toString());
-                break;
-            case(2):
-                System.out.println("\n"+"Automóvel Ligeiro:"+"\n"+veiculo2.toString());
-                break;
-            case(3):
-                System.out.println("\n"+"Táxi:"+"\n"+veiculo3.toString());
-                break;
-            case(4):
-                System.out.println("\n"+"Pesado de Mercadorias:"+"\n"+veiculo4.toString());
-                break;
-            case(5):
-                System.out.println("\n"+"Pesado de Passageiros:"+"\n"+veiculo5.toString());
-                break;
-        }
+        System.out.println(empresa.maiorDistancia());
     }
 }

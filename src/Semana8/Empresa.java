@@ -56,7 +56,33 @@ public class Empresa {
         veiculos_eletricos[indice] = null;
     }
 
+    int distancia = 0;
+    String maior_distancia="";
+    public String maiorDistancia(){
+        for(VeiculoMotorizado v:veiculos_motorizados){
+            if (v!=null){
+                if(v.distancia_total>distancia){
+                    distancia = v.distancia_total;
+                    maior_distancia = v.toString();
+                }
+            }
+        }
+        return maior_distancia;
+    }
+
     public String toString(){
-        return ("Nome: "+this.nome+"\n"+"Código Postal: "+this.codigo_postal+"\n"+"E-mail: "+this.email+"\n"+"Viaturas Motorizadas: "+viaturas_motorizadas+"\n"+"\n"+"\n"+"Viaturas Elétricas: "+viaturas_eletricas);
+        String s="Nome: "+this.nome+"\n"+"Código Postal: "+this.codigo_postal+"\n"+"E-mail: "+this.email+"\n"+"\n"+"VIATURAS MOTORIZADAS: "+"\n"+"\n";
+        for(VeiculoMotorizado v:veiculos_motorizados){
+            if(v!=null){
+                s+=v+"\n"+"\n";
+            }
+        }
+        s+="\n"+"VIATURAS ELÉTRICAS: "+"\n"+"\n";
+        for(VeiculoEletrico e:veiculos_eletricos){
+            if(e!=null){
+                s+=e+"\n"+"\n";
+            }
+        }
+        return s;
     }
 }
