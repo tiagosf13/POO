@@ -23,6 +23,7 @@ public class AutomovelLigeiroEletrico extends AutomovelLigeiro implements Veicul
 
     }
 
+    @Override
     public String toString(){
         return ("Matricula: "+this.matricula+"\n"+"Marca: "+this.marca+"\n"+"Modelo: "+this.modelo+"\n"+"Potência: "+this.potencia+"\n"+"Número do Quadro: "+this.numero_quadro+"\n"+"Capacidade da Bagageira: "+this.capacidade_bagageira+"\n"+"Percentagem: "+this.percentagem_atual);
     }

@@ -22,6 +22,7 @@ public class PesadoPassageirosEletrico extends PesadoPassageiros implements Veic
         }
     }
 
+    @Override
     public String toString(){
         return ("Matricula: "+this.matricula+"\n"+"Marca: "+this.marca+"\n"+"Modelo: "+this.modelo+"\n"+"Potência: "+this.potencia+"\n"+"Número de Quadro: "+this.numero_quadro+"\n"+"Peso: "+this.peso+"\n"+"Número Máximo de Passageiros: "+this.maximo_passageiros+"\n"+"Percentagem: "+this.percentagem_atual);
     }
