@@ -6,7 +6,7 @@ public class Empresa {
     private String codigo_postal;
     private String email;
     private VeiculoMotorizado[] veiculos_motorizados = new VeiculoMotorizado[10];
-    private VeiculoEletrico[] veiculos_eletricos = new VeiculoEletrico[3];
+    private VeiculoEletrico[] veiculos_eletricos = new VeiculoEletrico[10];
 
     Empresa(String nome, String codigo_postal, String email){
         this.nome = nome;
