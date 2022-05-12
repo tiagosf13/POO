@@ -60,11 +60,9 @@ public class Empresa {
     String maior_distancia="";
     public String maiorDistancia(){
         for(VeiculoMotorizado v:veiculos_motorizados){
-            if (v!=null){
-                if(v.distancia_total>distancia){
-                    distancia = v.distancia_total;
-                    maior_distancia = v.toString();
-                }
+            if (v!=null && v.distancia_total>distancia){
+                distancia = v.distancia_total;
+                maior_distancia = v.toString();
             }
         }
         return maior_distancia;
