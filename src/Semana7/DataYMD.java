@@ -1,6 +1,6 @@
 package src.Semana7;
 
-public class DataYMD extends Data{
+public class DataYMD extends Data implements Comparable<DataYMD>{
 
     //constructor
     public DataYMD(int day, int month, int year){
@@ -37,6 +37,18 @@ public class DataYMD extends Data{
             this.day++;
         }
     }
+
+    public int getYear() {
+		return this.year;
+	}
+
+    public int getMonth() {
+		return this.month;
+	}
+
+    public int getDay() {
+		return this.day;
+	}
 
     //decrement date
     public void decrementDate(int day, int month, int year){
@@ -92,4 +104,17 @@ public class DataYMD extends Data{
             return (true);
         }
     }
+
+    public int compareTo(DataYMD date2) {
+		if (this.getYear() < date2.getYear()) return -1;
+		else if (this.getYear() > date2.getYear()) return 1;
+
+		if (this.getMonth() < date2.getMonth()) return -1;
+		else if (this.getMonth() > date2.getMonth()) return 1;
+
+		if (this.getDay() < date2.getDay()) return -1;
+		else if (this.getDay() > date2.getDay()) return 1;
+
+		return 0;
+	}
 }
