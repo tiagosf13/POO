@@ -73,10 +73,12 @@ public class Ex1 {
                 dic.put(chave_anterior, significado_para_alterar);
             }
             else{
-                System.exit(0);
+                break;
             }
 
             System.out.println("-------------------------------------------");
         }
+        sc.close();
+        System.exit(0);
     }
 }

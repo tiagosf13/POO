@@ -29,5 +29,6 @@ public class Ex3 {
 
         System.out.println(dic.toString());
         
+        sc.close();
     }
 }

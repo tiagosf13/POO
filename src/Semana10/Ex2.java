@@ -104,11 +104,13 @@ public class Ex2 {
                 System.out.println(randomTermo(termo, dic));
             }
             else{
-                System.exit(0);
+                break;
             }
 
             System.out.println("-------------------------------------------");
         }
+        sc.close();
+        System.exit(0);
     }
 
     public static String randomTermo(String termo, Map<String, ArrayList<String>> dic){
