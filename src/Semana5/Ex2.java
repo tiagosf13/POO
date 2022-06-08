@@ -6,7 +6,6 @@ public class Ex2 {
     public static void main(String[] args){
         String data_inserida;
         int first_day_year=0, year=0;
-        Calendar calendario;
         Scanner sc = new Scanner(System.in);
         while (true){
             System.out.println("Date operations:");
@@ -22,7 +21,7 @@ public class Ex2 {
                     String[] arrayInput = data_inserida.split("/");
                     first_day_year = Integer.parseInt(arrayInput[0]);
                     year = Integer.parseInt(arrayInput[1]);
-                    calendario = new Calendar(first_day_year, year);
+                    Calendar calendario = new Calendar(first_day_year, year);
                     System.out.println("");
                     System.out.println("");
                     break;

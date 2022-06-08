@@ -1,7 +1,6 @@
 package src.Semana11;
 
 import java.util.Scanner;
-
 import java.io.FileReader;
 import java.io.IOException;
 import java.nio.charset.Charset;
@@ -14,7 +13,7 @@ public class Ex1 {
         String word, palavra, first_word, second_word;
         HashMap<String, HashMap<String, Integer>> dic = new HashMap<>();
         ArrayList<String> lista_palavras = new ArrayList<>();
-        Scanner input = new Scanner(new FileReader("pares_palavras.txt", Charset.forName("utf-8")));
+        Scanner input = new Scanner(new FileReader("major.txt", Charset.forName("utf-8")));
         input.useDelimiter("[\\t\\n.,:'‘’;?!-*{}=+&/()\\[\\]”“\"\\' ]+");
 
         while (input.hasNext()){

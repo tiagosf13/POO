@@ -1,6 +1,5 @@
 package src.Semana9;
 
-import src.Semana5.*;
 import src.Semana7.DataYMD;
 
 public class Pessoa{
