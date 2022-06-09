@@ -86,7 +86,7 @@ public class Ex2 {
                 }
             }
             else{
-                obs = ""; // se nao houVer atraso nenhum, a hora prevista vai ser vazia
+                obs = ""; // se nao houver atraso nenhum, a hora prevista vai ser vazia
             }
             if (!dic_chegadas.containsKey(origem)){ // se o dicionario de cidades de chegada nao contiver nenhum voo de chegada
                 dic_chegadas.put(origem, 1); // adicionar a origem e o numero de voos com a mesma cidade de origem
