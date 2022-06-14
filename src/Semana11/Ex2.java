@@ -2,6 +2,7 @@ package src.Semana11;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.TreeMap;
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -11,7 +12,7 @@ public class Ex2 {
         
         String voo, companhia, origem, atraso, obs, minutos_chegada_formatado, hora_chegada_formatado, tempo_medio_ecra;
         ArrayList<String[]> lista_voos, lista_companhias;
-        HashMap<String, ArrayList<String>> dic_atrasos = new HashMap<>();
+        TreeMap<String, ArrayList<String>> dic_atrasos = new TreeMap<>();
         HashMap<String, Integer> dic_chegadas = new HashMap<>();
         ArrayList<String[]> lista_atrasos = new ArrayList<>();
         Companhias conjunto_companhias = new Companhias(); // criar um objeto para colocar o conjunto de companhias
