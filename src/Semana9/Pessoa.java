@@ -8,7 +8,7 @@ public class Pessoa{
     private DataYMD dataNasc;
 
     //constructor
-    Pessoa(String nome, int cc, DataYMD data){
+    public Pessoa(String nome, int cc, DataYMD data){
         this.set(nome, cc, data);
     }
 
