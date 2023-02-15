@@ -25,6 +25,7 @@ public class Calendar{
             System.out.println("Insira o mês [1-12]");
             mes = sc.nextInt();
         }
+        sc.close();
         return(mes);
     }
 

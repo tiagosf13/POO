@@ -2,7 +2,6 @@ package src.Semana3;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
-import java.util.List;
 
 public class Ex4 {
     public static void main(String[] args) {
@@ -10,7 +9,7 @@ public class Ex4 {
         boolean var=false;
         int indice=0;
 
-        List mynumbers = new ArrayList<Double>();
+        ArrayList<Double> mynumbers = new ArrayList<Double>();
         Scanner sc = new Scanner(System.in);
         System.out.println("Insira os números reais a serem lidos:");
         while (var!=true) {

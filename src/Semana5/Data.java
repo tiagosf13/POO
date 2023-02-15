@@ -1,6 +1,6 @@
 package src.Semana5;
 
-public class Data {
+public class Data{
     int day;
     int month;
     int year; 

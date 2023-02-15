@@ -1,0 +1,50 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Ex6",
+            "request": "launch",
+            "mainClass": "src.Semana2.Ex6",
+            "projectName": "P_78a15045"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex1",
+            "request": "launch",
+            "mainClass": "src.Semana8.Ex1",
+            "projectName": "P_78a15045"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex1",
+            "request": "launch",
+            "mainClass": "src.Semana7.Ex1",
+            "projectName": "P_78a15045"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex2",
+            "request": "launch",
+            "mainClass": "src.Semana11.Ex2",
+            "projectName": "P_78a15045"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex1",
+            "request": "launch",
+            "mainClass": "src.Semana11.Ex1",
+            "projectName": "P_78a15045"
+        },
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${cwd}"
+            }
+        }
+    ]
+}
